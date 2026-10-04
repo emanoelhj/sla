@@ -10056,7 +10056,6 @@ SaveManager:IgnoreThemeSettings()
 SaveManager:SetIgnoreIndexes({ "MenuKeybind" })
 ThemeManager:ApplyToTab(Tabs.UISettings)
 SaveManager:BuildConfigSection(Tabs.UISettings)
-VortexNotify("Script loaded successfully")
 service.RunService.Heartbeat:Connect(function()
     Config.Frames = Config.Frames + 1
     local CurrentTime = tick()
